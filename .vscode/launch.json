@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Start Daemon",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/daemon/start_daemon.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/daemon"
+            },
+            "justMyCode": true
+        }
+    ]
+}
