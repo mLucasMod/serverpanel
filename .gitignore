@@ -46,3 +46,4 @@ __pycache__/
 # Fichiers spécifiques à Serverpanel
 config/config.php
 config/secrets.json
+daemon.pid
