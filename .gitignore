@@ -1,0 +1,48 @@
+# Logs
+*.log
+
+# Environnement
+.env
+.env.local
+
+# Dépendances
+vendor/
+node_modules/
+
+# Cache et fichiers temporaires
+*.cache
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Base de données locale
+*.sqlite
+*.db
+*.sql
+
+# Docker
+/docker/data/
+/docker/logs/
+
+# IDE et éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers générés
+/public/storage
+/public/hot
+
+# Clés SSH ou fichiers sensibles
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Fichiers spécifiques à Serverpanel
+config/config.php
+config/secrets.json
