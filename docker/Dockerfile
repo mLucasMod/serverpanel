@@ -25,7 +25,7 @@ RUN apt update && \
 RUN mkdir -p /etc/serverpanel /etc/ssl/certs /etc/ssl/private /etc/nginx/sites-available /etc/nginx/sites-enabled
 
 # Étape 5 : Cloner le dépôt contenant ton projet
-RUN git clone https://github.com/ton-compte/serverpanel.git /etc/serverpanel
+RUN git clone https://github.com/mLucasMod/serverpanel.git /etc/serverpanel
 
 # Étape 6 : Installer les dépendances Python du projet
 WORKDIR /etc/serverpanel
