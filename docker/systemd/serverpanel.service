@@ -1,0 +1,13 @@
+[Unit]
+Description=ServerPanel Daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /etc/serverpanel/daemon/bin/start_daemon.py
+WorkingDirectory=/etc/serverpanel
+User=root
+Group=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

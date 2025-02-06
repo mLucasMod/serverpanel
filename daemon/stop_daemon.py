@@ -1,7 +1,7 @@
 import os
 import signal
 
-from config.config import PID_FILE
+from config import PID_FILE
 
 def run():
     try:

@@ -1,7 +1,7 @@
 import os
 
-from config.config import PID_FILE
-from modules.daemon import Daemon
+from config import PID_FILE
+from src.daemon import Daemon
 
 def run():
     try:
