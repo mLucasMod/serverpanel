@@ -46,4 +46,4 @@ RUN ln -s /etc/nginx/sites-available/serverpanel.conf /etc/nginx/sites-enabled/
 EXPOSE 5000 5443
 
 # Étape 11 : Démarrer Nginx et ton daemon Python dans un script d'entrée
-CMD service nginx start && python3 /etc/serverpanel/daemon/bin/start_daemon.py
+CMD service nginx start && python3 /etc/serverpanel/daemon/start_daemon.py
