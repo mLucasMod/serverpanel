@@ -29,7 +29,7 @@ RUN git clone https://github.com/mLucasMod/serverpanel.git /etc/serverpanel
 
 # Étape 6 : Installer les dépendances Python du projet
 WORKDIR /etc/serverpanel
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r /etc/serverpanel/daemon/requirements.txt
 
 # Étape 7 : Créer un certificat SSL auto-signé
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/serverpanel.key -out /etc/ssl/certs/serverpanel.crt \
