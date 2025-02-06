@@ -25,9 +25,9 @@ RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -out /etc/ssl/certs/serverpanel.crt \
     -subj "/C=FR/ST=France/L=Paris/O=ServerPanel/OU=IT/CN=serverpanel.local"
 
-COPY nginx/serverpanel.conf /etc/nginx/sites-available/
+COPY /etc/serverpanel/docker/nginx.conf /etc/nginx/sites-available/default
 COPY /etc/serverpanel/docker/supervisord.conf /etc/supervisor/supervisord.conf
-RUN ln -s /etc/nginx/sites-available/serverpanel.conf /etc/nginx/sites-enabled/
+RUN ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 
 EXPOSE 5000 5443
 
