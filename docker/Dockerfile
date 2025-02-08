@@ -1,6 +1,6 @@
 FROM php:8.2-apache
 
-RUN apt-get update && apt-get install -y nginx git openssl && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y nginx git openssl python3 && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/mLucasMod/serverpanel.git /etc/serverpanel
 WORKDIR /etc/serverpanel
@@ -17,4 +17,4 @@ RUN mkdir -p /etc/ssl/certs /etc/ssl/private && \
 
 EXPOSE 5000 5443
 
-CMD service apache2 start && nginx -g "daemon off;"
+CMD service apache2 start && nginx -g "daemon off;" & python3 daemon/start_daemon.py
