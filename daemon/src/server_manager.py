@@ -3,4 +3,4 @@ class ServerManager:
         pass
     
     def check_servers(self):
-        print("Vérification des serveurs...")
+        print("Checking servers...")
